@@ -8,7 +8,7 @@ from kivy.properties import (
 )
 from kivy.core.window import Window
 
-screen_size = (720 / 2, 1280 / 2)
+width, height = 720 / 2, 1280 / 2
 # Window.size = screen_size
 
 class SumSymbol(Widget):
@@ -30,7 +30,7 @@ class PodeMisturar(App):
     screen_height = NumericProperty(1)
     def build(self):
         self.root = root = Background()
-        self.screen_height = screen_size[1]
+        self.screen_height = height
         return root
 
 
