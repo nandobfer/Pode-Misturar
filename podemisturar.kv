@@ -1,0 +1,71 @@
+#:kivy 1.0.9
+
+<Input_1>:
+    canvas:
+        Color:
+            rgba: 1, 1, 1, 0.1
+        Rectangle:
+            pos: self.x, self.y
+            size: self.size
+    
+    Label:
+        center: self.parent.center_x, self.parent.center_y * 1.5
+        font_size: 30 * root.height / 300
+        text: str(root.height)
+
+    TextInput:
+        center: self.parent.center_x, self.parent.center_y * 1.25
+        size: self.parent.width * 0.9, self.parent.height / 10
+        font_size: 15 * root.height / 300
+
+<Input_2>:
+    canvas:
+        Color:
+            rgba: 1, 1, 1, 0.1
+        Rectangle:
+            pos: self.x, self.y
+            size: self.size
+
+    Label:
+        center: self.parent.center_x, self.parent.center_y * 1.5
+        font_size: 30 * root.height / 300
+        text: '2º Produto:'
+
+<InputsContainers>:
+    size: self.parent.width / 1.25, self.parent.height / 2
+    canvas:
+        Color:
+            rgba: 1, 1, 1, 0.1
+        Rectangle:
+            pos: self.x, self.y
+            size: self.size
+
+    Input_1:
+        size: self.parent.width / 3, self.parent.height
+        pos: self.parent.x, self.parent.y 
+
+    Input_2:
+        size: self.parent.width / 3, self.parent.height
+        pos: self.parent.x + self.parent.width - self.width, self.parent.y 
+
+    SumSymbol:
+        center: self.parent.center
+        size: self.parent.width / 5, self.parent.height / 5
+
+        AsyncImage:
+            source: 'plus.png'
+            center: self.parent.center
+            size: self.parent.size
+            # size_hint: 1, .5
+            # pos_hint: {'center_x':.5, 'center_y': .5}
+
+<Background>:
+    id: 'background'
+    Label:
+        font_size: 35 * root.height / 300
+        text: 'Pode Misturar?'
+        center_x: self.parent.center_x
+        center_y: self.parent.height * 4 / 5
+
+    InputsContainers:
+        center: self.parent.center_x, self.parent.center_y * 0.8

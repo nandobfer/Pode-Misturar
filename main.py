@@ -1,31 +1,31 @@
-# -*- coding: utf-8 -*-
-
-import kivy
 from kivy.app import App
-from kivy.uix.label import Label
+from kivy.uix.widget import Widget
 from kivy.uix.boxlayout import BoxLayout
-
 from kivy.uix.button import Button
+from kivy.properties import (
+    NumericProperty, ReferenceListProperty, ObjectProperty
+)
 
-kivy.require('1.9.1')
+class SumSymbol(Widget):
+    pass
 
-var = 0
-def soma_um(instance):
-    global var
-    var += 1
-    instance.text = str(var)    
-    
-class MeuApp(App):
+class InputsContainers(Widget):
+    pass
+
+class Input_1(Widget):
+    pass
+
+class Input_2(Widget):
+    pass
+
+class Background(Widget):
+    pass
+
+class PodeMisturar(App):
     def build(self):
-        layout = BoxLayout(orientation='vertical',
-                padding=[40, 20, 40, 20])
-        
-        layout.add_widget(Label(text='Olá do Kivy!'))
-        btn = Button(text='Pressione-me!', size=(100,50))
-        
-        btn.bind(on_press=soma_um)
-        layout.add_widget(btn)
-        return layout 
-    
+        root = Background()
+        return root
+
+
 if __name__ == '__main__':
-    MeuApp().run()
+    PodeMisturar().run()
