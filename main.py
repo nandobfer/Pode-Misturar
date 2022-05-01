@@ -9,7 +9,7 @@ from kivy.properties import (
 from kivy.core.window import Window
 
 screen_size = (720 / 2, 1280 / 2)
-Window.size = screen_size
+# Window.size = screen_size
 
 class SumSymbol(Widget):
     pass
