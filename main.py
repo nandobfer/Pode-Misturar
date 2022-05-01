@@ -8,7 +8,7 @@ from kivy.properties import (
 from kivy.core.window import Window
 
 width, height = 720 / 2, 1280 / 2
-Window.size = (width, height)
+# Window.size = (width, height)
 
 class SumSymbol(Widget):
     pass
