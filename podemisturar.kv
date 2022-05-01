@@ -16,7 +16,7 @@
     TextInput:
         center: self.parent.center_x, self.parent.center_y * 1.25
         size: self.parent.width * 0.9, self.parent.height / 10
-        font_size: str(25 * root.height / app.screen_height)+'dp'
+        font_size: 25 * root.height / app.screen_height
 
 <Input_2>:
     canvas:
@@ -28,16 +28,16 @@
 
     Label:
         center: self.parent.center_x, self.parent.center_y * 1.5
-        font_size: str(35 * root.height / app.screen_height)+'dp'
+        font_size: 35 * root.height / app.screen_height
         text: '2º Produto:'
 
     TextInput:
         center: self.parent.center_x, self.parent.center_y * 1.25
         size: self.parent.width * 0.9, self.parent.height / 10
-        font_size: str(25 * root.height / app.screen_height)+'dp'
+        font_size: 25 * root.height / app.screen_height
 
 <InputsContainers>:
-    size: str(self.parent.width / 1.25)+'dp', str(self.parent.height / 2)+'dp'
+    size: self.parent.width / 1.25, self.parent.height / 2
     canvas:
         Color:
             rgba: 1, 1, 1, 0.1
@@ -67,7 +67,7 @@
 <Background>:
     id: 'background'
     Label:
-        font_size: str(40 * root.height / app.screen_height)+'dp'
+        font_size: 40 * root.height / app.screen_height
         text: 'Pode Misturar?'
         center_x: self.parent.center_x
         center_y: self.parent.height * 4 / 5
