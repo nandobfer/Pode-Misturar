@@ -27,10 +27,10 @@ class Background(Widget):
     pass
 
 class PodeMisturar(App):
-    screen_height = NumericProperty(1)
+    # screen_height = NumericProperty(1)
     def build(self):
         self.root = root = Background()
-        self.screen_height = height
+        # self.screen_height = height
         return root
 
 
