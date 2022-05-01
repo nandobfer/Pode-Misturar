@@ -10,13 +10,13 @@
     
     Label:
         center: self.parent.center_x, self.parent.center_y * 1.5
-        font_size: 35 * root.height / app.screen_height
+        font_size: 35 * root.height / 640
         text: '1º Produto:'
 
     TextInput:
         center: self.parent.center_x, self.parent.center_y * 1.25
         size: self.parent.width * 0.9, self.parent.height / 10
-        font_size: 25 * root.height / app.screen_height
+        font_size: 25 * root.height / 640
 
 <Input_2>:
     canvas:
@@ -28,13 +28,13 @@
 
     Label:
         center: self.parent.center_x, self.parent.center_y * 1.5
-        font_size: 35 * root.height / app.screen_height
+        font_size: 35 * root.height / 640
         text: '2º Produto:'
 
     TextInput:
         center: self.parent.center_x, self.parent.center_y * 1.25
         size: self.parent.width * 0.9, self.parent.height / 10
-        font_size: 25 * root.height / app.screen_height
+        font_size: 25 * root.height / 640
 
 <InputsContainers>:
     size: self.parent.width / 1.25, self.parent.height / 2
@@ -67,7 +67,7 @@
 <Background>:
     id: 'background'
     Label:
-        font_size: 40 * root.height / app.screen_height
+        font_size: 40 * root.height / 640
         text: 'Pode Misturar?'
         center_x: self.parent.center_x
         center_y: self.parent.height * 4 / 5
