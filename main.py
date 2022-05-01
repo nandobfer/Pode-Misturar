@@ -6,7 +6,7 @@ from kivy.uix.button import Button
 from kivy.properties import (
     NumericProperty, ReferenceListProperty, ObjectProperty
 )
-from kivy.core.window import Window
+# from kivy.core.window import Window
 
 width, height = 720 / 2, 1280 / 2
 # Window.size = screen_size
@@ -27,10 +27,10 @@ class Background(Widget):
     pass
 
 class PodeMisturar(App):
-    # screen_height = NumericProperty(1)
+    screen_height = NumericProperty(1)
     def build(self):
         self.root = root = Background()
-        # self.screen_height = height
+        self.screen_height = height
         return root
 
 
